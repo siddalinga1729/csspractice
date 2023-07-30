@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>HairStudio</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        box-sizing: border-box;
+      }
+      #banner {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), #2f979b),
+          url(images/Barber_Shop_img/banner.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        width: 100%;
+      }
+      .logo {
+        width: 120px;
+        position: absolute;
+        top: 4%;
+        left: 10%;
+      }
+      .banner-text {
+        color: white;
+        text-align: center;
+        padding-top: 180px;
+      }
+      .banner-text h1 {
+        font-size: 40px;
+        font-family: "Kaushan Script", cursive;
+      }
+      .banner-text p {
+        font-size: 10px;
+      }
+      .banner-btn {
+        top: 10px;
+        padding: 10px;
+      }
+      .banner-btn a {
+        width: 130px;
+        position: relative;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 10px;
+        padding: 10px 0;
+        color: #fff;
+        border: 0.5px solid #fff;
+        border-radius: 10px;
+        z-index: 1;
+        transition: color 0.5s;
+      }
+      .banner-btn a span {
+        /* width: 50%; */
+        height: 100%;
+        background: #fff;
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: 0.5s;
+      }
+      .banner-btn a:hover span {
+        width: 100%;
+      }
+      .banner-btn a:hover {
+        color: #000;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      #sideNav {
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        background: #009688;
+        z-index: 2;
+        transition: 0.5s;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 50px 20px;
+      }
+      #menuBtn {
+        width: 50px;
+        height: 50px;
+        background: #009688;
+        text-align: center;
+        position: fixed;
+        top: 30px;
+        right: 20px;
+        border-radius: 3px;
+        z-index: 3;
+        cursor: pointer;
+      }
+      #menuBtn img {
+        width: 20px;
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="banner">
+      <img src="images/Barber_Shop_img/logo.png" class="logo" />
+      <div class="banner-text">
+        <h1>Hair Studio</h1>
+        <p>Style Your Hair Is Style Your Life</p>
+        <div class="banner-btn">
+          <a href="#"><span></span>Find Out</a>
+          <a href="#"><span></span>Read More</a>
+        </div>
+      </div>
+    </section>
+    <div id="sideNav">
+      <nav>
+        <ul>
+          <li>
+            <a href="">HOME</a>
+          </li>
+          <li>
+            <a href="">SERVICES</a>
+          </li>
+          <li>
+            <a href="">TESTIMONIALS</a>
+          </li>
+          <li>
+            <a href="">MEET US</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div id="menuBtn">
+      <img src="images/Barber_Shop_img/menu.png" alt="" id="menu" />
+    </div>
+    <script>
+      var menuBtn = document.getElementById("menuBtn");
+      var sideNav = document.getElementById("sideNav");
+      var menu = document.getElementById("menu");
+      menuBtn.onclick= function () {
+        if (sideNav.style.right == "-250px") {
+          sideNav.style.right = "0";
+        } else {
+          sideNav.style.right = "-250px";
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        font-family:fantasy ;
+        display: grid;
+        width: 450px;
+        height: 300px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 4fr 1fr;
+        grid-gap: 3px;
+    }
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(89, 89, 190);
+        border-radius: 10px;
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    .search{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(134, 190, 89);
+        border-radius: 10px;
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .left{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(78, 196, 196);
+        border-radius: 10px;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .middle{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(150, 89, 190);
+        border-radius: 10px;
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .right{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(219, 124, 80);
+        border-radius: 10px;
+        grid-column: 3/4;
+        grid-row: 2/4;
+    }
+    .footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(64, 199, 104);
+        border-radius: 10px;
+        grid-column: 1/5;
+        grid-row: 4/5;
+    }
+    .container>div{
+        border-radius:5px;
+    }
+    body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<body>
+    <div class="container">
+<div class="header">Header</div>
+<div class="search">Search</div>
+<div class="right">Right sidebar</div>
+<div class="left">left sidebar</div>
+<div class="middle">Middle Column</div>
+<div class="footer">Footer</div>
+    </div>
+</body>
+</html>

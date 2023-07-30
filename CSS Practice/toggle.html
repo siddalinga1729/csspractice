@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container input {
+        display: none;
+      }
+      .container label {
+        position: relative;
+        display: block;
+        width: 70px;
+        height: 30px;
+        background-color: rgba(187, 165, 137, 0.89);
+        border-radius: 30px;
+      }
+      .container label:before {
+        position: absolute;
+        top: 50%;
+        transform: translatey(-50%);
+        margin-left: 5px;
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-color: rgba(204, 91, 157, 0.89);
+        border-radius: 30px;
+      }
+      .container input:checked + label {
+        background-color: aqua;
+      }
+      .container input:checked + label:before {
+        left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input type="checkbox" id="toggle" />
+      <label for="toggle"></label>
+    </div>
+  </body>
+</html>

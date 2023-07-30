@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .outer {
+        display: flex;
+        flex-direction: column;
+        border: solid 1px rgb(224, 217, 217);
+        border-radius: 5px;
+        padding: 20px;
+        gap: 3px;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .middle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3px;
+      }
+      #data1 {
+        font-family:  sans-serif;
+        color: rgb(95, 88, 88);
+        font-size: 15px;
+      }
+      #data2 {
+        font-family:  sans-serif;
+        color: rgb(95, 88, 88);
+        font-size: 10px;
+      }
+      input {
+        border: solid 1px rgb(187, 181, 181);
+        border-radius: 3px;
+        padding: 5px;
+      }
+      img {
+        width: 80px;
+      }
+      #link {
+        text-decoration: none;
+        color: rgb(61, 61, 233);
+        font-size: 12px;
+      }
+      button{
+        background-color: rgb(68, 68, 230);
+        border: none;
+        color: #faf8f8;
+        width: 55px;
+        height: 22px;
+        margin-left: 125px;
+        border-radius: 5px;
+      }
+      button:hover{
+        background-color: rgb(36, 102, 187);
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="container">
+        <div class="logo">
+          <img src="./googlelogo_color_272x92dp.png" alt="" />
+        </div>
+        <div class="middle">
+          <p id="data1">Sign in</p>
+          <p id="data2">Use Your Google Account</p>
+        </div>
+        <div class="data">
+          <input type="text" placeholder="E-mail or Phone" />
+        </div>
+        <div class="data">
+          <input type="text" placeholder="Password" />
+        </div>
+      </div>
+      <a href="" id="link">forget your login details?</a>
+    <button>login</button>
+    </div>
+  </body>
+</html>
